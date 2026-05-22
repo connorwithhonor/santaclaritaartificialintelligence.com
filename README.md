@@ -1,2 +1,0 @@
-# santaclaritaartificialintelligence.com
-SantaClaritaAI
