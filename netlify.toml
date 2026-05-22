@@ -1,1 +1,26 @@
-{"id":"/netlify.toml","path":"/netlify.toml","sha":"717af2d848ef2a6257ab5920affe4bbd500ad2e5","mime_type":"application/octet-stream","size":543,"site_id":"cb6f3d15-560c-447d-a2f8-15626a58df1e","deploy_id":"69d70da045a78655dfd77d36"}
+# santaclaritaartificialintelligence.com - Netlify build config
+# Source of truth: this repo. Deploys triggered on push to main.
+# Snapshot-API uploads are deprecated — see SITE-REGISTRY.txt + connor-own-sites-git-canonical.md
+
+[build]
+  publish = "."
+
+# Disable HTML post-processing so we never inject favicon/meta tags multiple times
+# (Previous manual-deploy sessions injected duplicate favicon blocks; auto-deploy from
+# git should never modify the source HTML at build time.)
+[build.processing]
+  skip_processing = true
+
+[build.processing.html]
+  pretty_urls = true
+
+# Don't publish project-internal docs even if they get committed
+[[redirects]]
+  from = "/CLAUDE.md"
+  to = "/404.html"
+  status = 404
+
+[[redirects]]
+  from = "/README*"
+  to = "/404.html"
+  status = 404
