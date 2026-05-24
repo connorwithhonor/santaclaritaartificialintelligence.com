@@ -1275,48 +1275,39 @@
         </div>
     </section>
 
-    <!-- EMAIL OPT-IN (HE-ready, Formspree fallback active) -->
-    <!-- TO SWAP TO HE FORM EMBED: replace the <form>...</form> block below with the iframe
-         + script pair from HE Forms > Embed Code. Keep lead_source as a HE custom field
-         prefilled to scai-homepage for tag routing in the HE workflow. -->
-    <section id="email-optin" aria-label="Weekly AI commentary signup" style="padding: 4rem 0; background: linear-gradient(180deg, rgba(13,13,20,0.85) 0%, rgba(6,182,212,0.04) 100%); border-top: 1px solid rgba(6,182,212,0.1); border-bottom: 1px solid rgba(6,182,212,0.1);">
+    <!-- HE UNIVERSAL OPT-IN (Form 6, location wGQNykcwXU4XZhG6toH7) -->
+    <!-- Lead source tagging: ?lead_source=scai-homepage in iframe URL.
+         Once Connor adds "Source" custom field to the form, this auto-prefills.
+         HE workflow: when source contains "scai", apply tag matching specific value. -->
+    <section id="email-optin" aria-label="Get on the SCAI list" style="padding: 4rem 0; background: linear-gradient(180deg, rgba(13,13,20,0.85) 0%, rgba(6,182,212,0.04) 100%); border-top: 1px solid rgba(6,182,212,0.1); border-bottom: 1px solid rgba(6,182,212,0.1);">
         <div class="container">
-            <div class="reveal" style="max-width: 680px; margin: 0 auto; padding: 2.4rem 2rem; background: linear-gradient(135deg, rgba(6,182,212,0.08), rgba(255,193,7,0.04)); border: 1px solid rgba(6,182,212,0.3); border-radius: 14px; text-align: center;">
-                <div class="label" style="display: inline-block; color: var(--accent, #ffc107); margin-bottom: 0.6rem;">Weekly AI Commentary</div>
-                <h2 style="font-size: clamp(1.4rem, 2.8vw, 1.95rem); font-weight: 800; line-height: 1.2; margin: 0 0 0.8rem; color: #fff;">What I'm Seeing in AI. <span class="gradient-text">Every Friday. Free.</span></h2>
-                <p style="color: var(--text-secondary); font-size: 0.98rem; max-width: 520px; margin: 0 auto 1.6rem; line-height: 1.6;">Operator-grade commentary on what's actually happening in artificial intelligence, translated for working business owners. No spam. Unsubscribe with one click.</p>
-                <form class="scai-optin-form" action="https://formspree.io/f/mwvrvelp" method="POST" onsubmit="return scaiOptInSubmit(this)" style="display: flex; gap: 0.5rem; max-width: 480px; margin: 0 auto; flex-wrap: wrap;">
-                    <input type="email" name="email" placeholder="your@email.com" required style="flex: 1; min-width: 220px; padding: 0.85rem 1rem; background: rgba(5,5,8,0.85); border: 1px solid rgba(6,182,212,0.3); border-radius: 6px; color: var(--text); font-family: inherit; font-size: 0.95rem;">
-                    <input type="hidden" name="lead_source" value="scai-homepage">
-                    <input type="hidden" name="_subject" value="New SCAI subscriber (homepage)">
-                    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-                    <button type="submit" data-track="optin_submit" style="background: var(--primary); color: #050508; border: none; padding: 0.85rem 1.4rem; border-radius: 6px; font-weight: 800; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.12em; cursor: pointer; box-shadow: 0 0 18px rgba(6,182,212,0.4); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-1px)'" onmouseout="this.style.transform='translateY(0)'">Subscribe</button>
-                </form>
-                <p style="font-size: 0.74rem; color: var(--text-muted); margin-top: 0.9rem; line-height: 1.5;">Joining 1,000+ agents and SMB owners learning AI from someone running these tools in real businesses.</p>
-                <div class="scai-optin-success" style="display:none; color: #4dffb4; font-weight: 700; margin-top: 1rem;">Thanks. You're on the list. Check your inbox.</div>
+            <div class="reveal" style="max-width: 720px; margin: 0 auto; padding: 2.4rem 2rem; background: linear-gradient(135deg, rgba(6,182,212,0.08), rgba(255,193,7,0.04)); border: 1px solid rgba(6,182,212,0.3); border-radius: 14px;">
+                <div style="text-align: center; margin-bottom: 1.4rem;">
+                    <div class="label" style="display: inline-block; color: var(--accent, #ffc107); margin-bottom: 0.6rem;">Stay Looped In</div>
+                    <h2 style="font-size: clamp(1.4rem, 2.8vw, 1.95rem); font-weight: 800; line-height: 1.2; margin: 0 0 0.8rem; color: #fff;">Get The Weekly AI Brief. <span class="gradient-text">Plus First Dibs On Audit Slots.</span></h2>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; max-width: 540px; margin: 0 auto; line-height: 1.6;">Real-world AI commentary in your inbox. First crack at Connor's calendar when you're ready to deploy. From someone running these tools in real businesses every day, not commenting from the sidelines.</p>
+                </div>
+                <iframe src="https://api.leadconnectorhq.com/widget/form/y4ptkD8Aj4wRil8mlvea?lead_source=scai-homepage"
+                    style="width:100%;min-height:540px;border:none;border-radius:8px;display:block"
+                    id="inline-y4ptkD8Aj4wRil8mlvea-home"
+                    data-layout='{"id":"INLINE"}'
+                    data-trigger-type="alwaysShow"
+                    data-trigger-value=""
+                    data-activation-type="alwaysActivated"
+                    data-activation-value=""
+                    data-deactivation-type="neverDeactivate"
+                    data-deactivation-value=""
+                    data-form-name="SCAI Universal Opt-In"
+                    data-height="540"
+                    data-layout-iframe-id="inline-y4ptkD8Aj4wRil8mlvea-home"
+                    data-form-id="y4ptkD8Aj4wRil8mlvea"
+                    title="SCAI Universal Opt-In">
+                </iframe>
+                <p style="font-size: 0.74rem; color: var(--text-muted); margin-top: 1rem; line-height: 1.5; text-align: center;">Joining 1,000+ agents and SMB owners learning AI from someone running these tools in real businesses.</p>
             </div>
         </div>
     </section>
-
-    <script>
-    function scaiOptInSubmit(form) {
-        fetch(form.action, {
-            method: 'POST',
-            body: new FormData(form),
-            headers: { Accept: 'application/json' }
-        }).then(() => {
-            form.style.display = 'none';
-            const success = form.parentElement.querySelector('.scai-optin-success');
-            if (success) success.style.display = 'block';
-            if (typeof gtag === 'function') {
-                gtag('event', 'optin_submit', { source: form.querySelector('input[name=lead_source]').value });
-            }
-        }).catch(() => {
-            form.submit();
-        });
-        return false;
-    }
-    </script>
+    <script src="https://link.msgsndr.com/js/form_embed.js"></script>
 
     <!-- ABOUT -->
     <section id="about">
