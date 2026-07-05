@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wispr Flow — Talk Instead of Type | Santa Clarita Artificial Intelligence</title>
+    <meta name="description" content="Connor's AI tool pick: Wispr Flow turns your voice into clean, finished text in every app. About 4x faster than typing. Scan the code or tap the button to try it free.">
+    <meta name="keywords" content="Wispr Flow, voice dictation, voice to text, AI dictation, type faster, Santa Clarita AI tools, Connor MacIvor AI pick">
+    <meta name="author" content="Connor T. MacIvor">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="theme-color" content="#09090b">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="https://storage.googleapis.com/msgsndr/3z37W4oH1lMfraSObL1X/media/697e9404f7a8778ce3d0c151.svg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://santaclaritaartificialintelligence.com/wispr">
+    <meta property="og:title" content="Wispr Flow — Talk Instead of Type | Connor's AI Tool Pick">
+    <meta property="og:description" content="Voice dictation that writes clean text about 4x faster than typing. Scan or tap to try it free.">
+    <meta property="og:image" content="https://santaclaritaartificialintelligence.com/og-image.png">
+    <meta property="og:site_name" content="Santa Clarita Artificial Intelligence">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="https://santaclaritaartificialintelligence.com/og-image.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://santaclaritaartificialintelligence.com/wispr">
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Wispr Flow — Connor's AI Tool Pick",
+        "url": "https://santaclaritaartificialintelligence.com/wispr",
+        "isPartOf": { "@type": "WebSite", "url": "https://santaclaritaartificialintelligence.com/" },
+        "about": { "@type": "SoftwareApplication", "name": "Wispr Flow", "applicationCategory": "Productivity", "operatingSystem": "macOS, Windows, iOS" },
+        "author": { "@type": "Person", "name": "Connor T. MacIvor" }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        :root {
+            --primary: #06b6d4;
+            --primary-glow: rgba(6, 182, 212, 0.15);
+            --accent: #ef4444;
+            --accent-glow: rgba(239, 68, 68, 0.2);
+            --surface: rgba(255, 255, 255, 0.03);
+            --surface-hover: rgba(255, 255, 255, 0.06);
+            --border: rgba(255, 255, 255, 0.08);
+            --border-hover: rgba(255, 255, 255, 0.15);
+            --text: #fafafa;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --mono: 'JetBrains Mono', monospace;
+        }
+        body {
+            background: #09090b;
+            color: #fafafa;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        a:focus-visible, button:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+        .skip-link {
+            position: absolute; left: 1rem; top: -60px;
+            background: var(--primary); color: #09090b; font-weight: 700;
+            padding: 0.5rem 1rem; z-index: 2000; text-decoration: none; border-radius: 8px; transition: top 0.2s;
+        }
+        .skip-link:focus { top: 1rem; }
+
+        .container { max-width: 1200px; width: 90%; margin: 0 auto; }
+        section { padding: 6rem 0; position: relative; z-index: 1; }
+        h1, h2, h3 { font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; }
+        .label {
+            font-family: var(--mono); font-size: 0.75rem; font-weight: 500;
+            text-transform: uppercase; letter-spacing: 0.15em; color: var(--primary);
+            margin-bottom: 0.75rem; display: inline-flex; align-items: center; gap: 0.5rem;
+        }
+        .label::before { content: ''; width: 24px; height: 1px; background: var(--primary); }
+
+        /* Ambient background */
+        .ambient { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+        .ambient-orb { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.3; }
+        .orb-1 { width: 600px; height: 600px; background: radial-gradient(circle, rgba(6,182,212,0.3), transparent 70%); top: -200px; right: -100px; }
+        .orb-2 { width: 500px; height: 500px; background: radial-gradient(circle, rgba(239,68,68,0.12), transparent 70%); bottom: -100px; left: -150px; }
+        .grid-bg {
+            position: absolute; inset: 0; width: 100%; height: 100%;
+            background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 60px 60px;
+            -webkit-mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, black 40%, transparent 100%);
+            mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, black 40%, transparent 100%);
+        }
+
+        /* Nav */
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1rem 0;
+            background: rgba(9, 9, 11, 0.8); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid transparent; transition: all 0.3s ease;
+        }
+        nav.scrolled { border-bottom-color: var(--border); background: rgba(9, 9, 11, 0.95); }
+        nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; color: var(--text); text-decoration: none; display: flex; align-items: center; gap: 0.75rem; }
+        .logo-mark { width: 32px; height: 32px; border: 1.5px solid var(--primary); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.7rem; color: var(--primary); background: rgba(6, 182, 212, 0.08); }
+        .nav-links { display: flex; gap: 1.75rem; list-style: none; align-items: center; }
+        .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.82rem; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--text); }
+        .nav-cta { background: var(--accent); color: white !important; padding: 0.45rem 1.1rem; border-radius: 8px; font-weight: 600; transition: all 0.2s !important; }
+        .nav-cta:hover { opacity: 0.9; transform: translateY(-1px); }
+        .mobile-menu-btn { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: transparent; border: 0; padding: 4px; }
+        .mobile-menu-btn span { width: 24px; height: 2px; background: var(--text-secondary); border-radius: 2px; transition: 0.3s; }
+
+        /* Buttons */
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.85rem 1.75rem; font-size: 0.9rem; font-weight: 600; text-decoration: none; border-radius: 10px; transition: all 0.2s ease; cursor: pointer; border: none; font-family: inherit; }
+        .btn-primary { background: var(--accent); color: white; box-shadow: 0 0 20px var(--accent-glow); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 30px var(--accent-glow); }
+        .btn-secondary { background: transparent; color: var(--text); border: 1px solid var(--border); }
+        .btn-secondary:hover { border-color: var(--border-hover); background: var(--surface); }
+
+        /* Wispr hero */
+        .wispr-hero { padding-top: 9rem; }
+        .wispr-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+        .wispr-hero h1 { font-size: clamp(2.4rem, 5.5vw, 4rem); line-height: 1.02; margin-bottom: 1.25rem; }
+        .wispr-hero h1 .gradient-text { background: linear-gradient(135deg, var(--primary), #818cf8); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+        .wispr-lede { color: var(--text-secondary); font-size: 1.15rem; max-width: 40ch; margin-bottom: 1.75rem; }
+        .chips { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1.75rem; }
+        .chip { border: 1px solid var(--border); background: var(--surface); border-radius: 100px; padding: 0.5rem 1rem; font-size: 0.85rem; font-weight: 600; }
+        .chip b { color: var(--primary); }
+        .fine { font-size: 0.9rem; color: var(--text-muted); }
+        .fine strong { color: var(--text); }
+
+        /* QR card */
+        .scan-card { background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01)); border: 1px solid var(--border); border-radius: 24px; padding: clamp(1.5rem, 2.5vw, 2rem); text-align: center; box-shadow: 0 30px 80px -30px rgba(0,0,0,0.8); }
+        a.qrwrap { display: inline-block; background: #fff; border-radius: 18px; padding: clamp(10px, 1.4vw, 16px); line-height: 0; text-decoration: none; transition: transform 0.15s ease; }
+        a.qrwrap:hover { transform: translateY(-2px); }
+        .qrwrap img { width: min(300px, 60vw); height: auto; display: block; }
+        .scan-label { margin-top: 1rem; font-size: 1.2rem; font-weight: 800; letter-spacing: -0.01em; }
+        .scan-label span { color: var(--primary); }
+        .btn-scan { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; margin-top: 1rem; padding: 0.9rem 1.5rem; border-radius: 12px; background: linear-gradient(100deg, var(--primary), #6b8afd); color: #04121b; font-weight: 800; text-decoration: none; box-shadow: 0 12px 30px -10px rgba(6,182,212,0.6); transition: transform 0.15s ease, box-shadow 0.15s ease; }
+        .btn-scan:hover { transform: translateY(-2px); box-shadow: 0 18px 42px -12px rgba(6,182,212,0.78); }
+        .scan-hint { margin-top: 0.7rem; font-size: 0.78rem; color: var(--text-muted); }
+        .scan-url { margin-top: 0.5rem; font-size: 0.85rem; color: var(--text-secondary); }
+        .scan-url a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); }
+        .scan-url a:hover { color: var(--primary); border-color: var(--primary); }
+
+        /* Why section */
+        .why { border-top: 1px solid var(--border); background: var(--surface); }
+        .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2rem; }
+        .why-card { background: rgba(9,9,11,0.6); border: 1px solid var(--border); border-radius: 16px; padding: 1.75rem; transition: all 0.25s; }
+        .why-card:hover { border-color: var(--primary); background: rgba(6,182,212,0.04); transform: translateY(-3px); }
+        .why-card .n { font-family: var(--mono); font-size: 0.7rem; color: var(--primary); margin-bottom: 0.75rem; }
+        .why-card h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+        .why-card p { color: var(--text-secondary); font-size: 0.9rem; }
+
+        /* Closing band */
+        .closing { text-align: center; }
+        .closing h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); margin-bottom: 0.9rem; }
+        .closing p { color: var(--text-secondary); max-width: 620px; margin: 0 auto 1.75rem; }
+
+        /* Footer */
+        footer { padding: 3rem 0; border-top: 1px solid var(--border); background: rgba(0,0,0,0.3); position: relative; z-index: 1; }
+        footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
+        .footer-brand { font-weight: 700; font-size: 0.85rem; letter-spacing: 0.04em; }
+        .footer-copy { font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem; }
+        footer .nav-links a { font-size: 0.75rem; }
+
+        @media (max-width: 1100px) {
+            .nav-links { position: fixed; top: 0; right: -100%; width: 75%; height: 100vh; background: rgba(9,9,11,0.98); backdrop-filter: blur(20px); border-left: 1px solid var(--border); flex-direction: column; justify-content: center; align-items: center; gap: 1.5rem; transition: right 0.35s ease; z-index: 1002; }
+            .nav-links.active { right: 0; }
+            .mobile-menu-btn { display: flex; z-index: 1003; }
+        }
+        @media (max-width: 900px) {
+            .wispr-grid { grid-template-columns: 1fr; text-align: center; }
+            .scan-card { order: -1; max-width: 460px; margin: 0 auto; }
+            .wispr-lede { margin-left: auto; margin-right: auto; }
+            .chips { justify-content: center; }
+            .why-grid { grid-template-columns: 1fr; }
+            footer .container { justify-content: center; text-align: center; }
+        }
+        @media (prefers-reduced-motion: reduce) { .ambient { display: none; } * { transition: none !important; } }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <div class="ambient">
+        <div class="grid-bg"></div>
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+    </div>
+
+    <nav id="navbar">
+        <div class="container">
+            <a href="/" class="logo">
+                <div class="logo-mark">AI</div>
+                SANTA CLARITA AI
+            </a>
+            <ul class="nav-links" id="primary-nav">
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/industries/">Industries</a></li>
+                <li><a href="/blog/">Insights</a></li>
+                <li><a href="/show/">Daily Show</a></li>
+                <li><a href="/#contact" class="nav-cta">Free Audit</a></li>
+            </ul>
+            <button type="button" class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main id="main">
+        <!-- WISPR HERO -->
+        <section class="wispr-hero">
+            <div class="container">
+                <div class="wispr-grid">
+                    <div class="pitch">
+                        <div class="label">Connor's AI Tool Pick</div>
+                        <h1>Stop typing.<br><span class="gradient-text">Start talking.</span></h1>
+                        <p class="wispr-lede">Wispr Flow turns your voice into clean, finished text in every app you already use. You ramble, it writes. This is the dictation tool I actually run every day.</p>
+                        <div class="chips">
+                            <span class="chip"><b>220</b> words / min</span>
+                            <span class="chip"><b>4x</b> faster than typing</span>
+                            <span class="chip">Works in <b>50+</b> apps</span>
+                            <span class="chip"><b>100+</b> languages</span>
+                        </div>
+                        <p class="fine"><strong>Mac, Windows, iPhone.</strong> Free Pro trial for 14 days. No credit card required.</p>
+                    </div>
+
+                    <aside class="scan-card">
+                        <a class="qrwrap" href="https://api.honorelevate.com/qr/HXt7v1vr8e6a" target="_blank" rel="noopener">
+                            <img src="/wispr/wispr-flow-qr.png" alt="Scan or tap to try Wispr Flow free" width="900" height="900">
+                        </a>
+                        <div class="scan-label">Scan to try it <span>free</span></div>
+                        <a class="btn-scan" href="https://api.honorelevate.com/qr/HXt7v1vr8e6a" target="_blank" rel="noopener">Can't scan? Tap here to open &rarr;</a>
+                        <div class="scan-hint">On your phone or can't scan? Use the button.</div>
+                        <div class="scan-url">or type <a href="https://wisprflow.ai/r?CONNOR6854" target="_blank" rel="noopener">wisprflow.ai/r?CONNOR6854</a></div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY IT'S THE PICK -->
+        <section class="why">
+            <div class="container">
+                <div class="label">Why It Made The Cut</div>
+                <h2 style="font-size: clamp(1.6rem, 3vw, 2.2rem);">Voice is the fastest input you own</h2>
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="n">01</div>
+                        <h3>It cleans up your speech</h3>
+                        <p>Old dictation dumped every "um" on the page. Wispr Flow strips the filler, fixes typos, and punctuates. You get writer-clean text, not a raw transcript.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="n">02</div>
+                        <h3>It works everywhere</h3>
+                        <p>Email, Slack, docs, your CRM, a code editor, a random web form. You hit the shortcut, you talk, the words land where your cursor is. 50+ apps, 100+ languages.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="n">03</div>
+                        <h3>The math is stupid</h3>
+                        <p>You type around 45 words a minute. You talk at 220. That is roughly 4x, across every email and message you send all day. Small wins that compound fast.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLOSING -->
+        <section class="closing">
+            <div class="container">
+                <div class="label" style="justify-content: center;">Full Transparency</div>
+                <h2>Yes, this is my referral link</h2>
+                <p>I am telling you straight because the tool is good enough that I would send it either way. You get the free trial. I get the credit. Everybody wins, and you probably never type a rough first draft again.</p>
+                <div style="display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://api.honorelevate.com/qr/HXt7v1vr8e6a" target="_blank" rel="noopener" class="btn-scan" style="margin-top:0;">Try Wispr Flow Free &rarr;</a>
+                    <a href="/#contact" class="btn btn-primary">Want AI Like This In Your Business?</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div>
+                <div class="footer-brand">SANTA CLARITA ARTIFICIAL INTELLIGENCE</div>
+                <div class="footer-copy">&copy; 2026 Santa Clarita Artificial Intelligence. All Rights Reserved.</div>
+            </div>
+            <ul class="nav-links" style="position: static; width: auto; height: auto; background: none; border: none; backdrop-filter: none; flex-direction: row; gap: 1.5rem;">
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/industries/">Industries</a></li>
+                <li><a href="/blog/">Insights</a></li>
+                <li><a href="/show/">Daily Show</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const navLinks = document.querySelector('.nav-links');
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const toggleMenu = () => {
+            navLinks.classList.toggle('active');
+            menuBtn.classList.toggle('open');
+            menuBtn.setAttribute('aria-expanded', navLinks.classList.contains('active') ? 'true' : 'false');
+        };
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 80); }, { passive: true });
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navLinks.classList.contains('active')) { toggleMenu(); }
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => { if (navLinks.classList.contains('active')) toggleMenu(); });
+        });
+    </script>
+</body>
+</html>
